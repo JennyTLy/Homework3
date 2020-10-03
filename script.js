@@ -7,10 +7,10 @@ var standardChar = "abcdefghijklmnopqrstuvxyz1234567890"
 
 //prompt user to select password length and validate length otherwise prompt user to select again.
 
-let charLength=parseInt (prompt("For your auto-generated password, please select a length between 8 and 128 characters."));
+let charLength = parseInt (prompt("For your auto-generated password, please select a length between 8 and 128 characters."));
 while(charLength < 8 || charLength> 128 || typeof(charLength) != "number" || charLength === NaN || charLength === null){
   alert("For your auto-generated password, please select a length between 8 and 128 characters.");
-  charLength=parseInt(prompt("Please enter the length of characters you'd like for your password.  The password must be a minimum of 8 and a maximum of 128 characters."));
+  charLength = parseInt(prompt("Please enter the length of characters you'd like for your password.  The password must be a minimum of 8 and a maximum of 128 characters."));
 }
 
 //prompt user to select if they'd like to use uppercase letters in their password
