@@ -15,13 +15,13 @@ var upperCaseChoice = prompt("Would you like to include uppercase letters? Pleas
 var specialCharChoice = prompt("Would you like to include special characters in your password? Please type 'yes' for yes or 'no' for no")
 
 //console log password length response
-console.log("Password Length" + charLength);
+console.log("Password Length: " + charLength);
 
 //console log uppercase usage response
-console.log("Include Uppercase" + upperCaseChoice);
+console.log("Include Uppercase: " + upperCaseChoice);
 
 //console log special character response
-console.log("Include Special Characters" + specialCharChoice)
+console.log("Include Special Characters: " + specialCharChoice)
 
 //validating user choices
 //validating uppercase response
