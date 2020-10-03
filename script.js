@@ -4,6 +4,10 @@ var generateBtn = document.querySelector("#generate");
 //below is a sequence of prompts that will instruct the user to select options
 var standardChar = "abcdefghijklmnopqrstuvxyz1234567890"
 
+//prompt user to select if they'd like to use uppercase letters in their password
+var upperCaseChoice = prompt("Would you like to include uppercase letters? Please type 'true' for yes or 'false' for no")
+
+
 //prompt to select password length
 var charLength = prompt("For your auto-generated password, please select a lengeth between 8 to 15")
 
