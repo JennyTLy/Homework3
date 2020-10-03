@@ -5,8 +5,13 @@ var generateBtn = document.querySelector("#generate");
 var standardChar = "abcdefghijklmnopqrstuvxyz1234567890"
 
 
-//prompt to select password length
-var charLength = prompt("For your auto-generated password, please select a lengeth between 8 to 15")
+//prompt user to select password length and validate length otherwise prompt user to select again.
+
+let charLength=parseInt (prompt("For your auto-generated password, please select a length between 8 and 128 characters."));
+while(charLength < 8 || charLength> 128 || typeof(charLength) != "number" || charLength === NaN || charLength === null){
+  alert("For your auto-generated password, please select a length between 8 and 128 characters.");
+  charLength=parseInt(prompt("Please enter the length of characters you'd like for your password.  The password must be a minimum of 8 and a maximum of 128 characters."));
+}
 
 //prompt user to select if they'd like to use uppercase letters in their password
 var upperCaseChoice = prompt("Would you like to include uppercase letters? Please type 'yes' for yes or 'no' for no")
@@ -23,7 +28,9 @@ console.log("Include Uppercase: " + upperCaseChoice);
 //console log special character response
 console.log("Include Special Characters: " + specialCharChoice)
 
+
 //validating user choices
+
 //validating uppercase response
 function upperValidation(){
 
