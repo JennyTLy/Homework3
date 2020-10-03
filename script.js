@@ -54,6 +54,14 @@ var result = upperValidation() + specialValidation() + standardChar;
 //console logging the result
 console.log("Characteer Set: " + result);
 
+function generatePassword(){
+  var retVal = "";
+  for(i=0, n =result.length; i < charLength; i++){
+    retVal += result.charAt(Math.floor(Math.random() *n))
+  }
+  return retVal;
+
+}
 
 
 // Write password to the #password input
