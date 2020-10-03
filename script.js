@@ -48,6 +48,11 @@ function specialValidation(){
 }
 
 
+//combining variables for user choices and standard char 
+var result = upperValidation() + specialValidation() + standardChar;
+
+//console logging the result
+console.log("Characteer Set: " + result);
 
 
 
