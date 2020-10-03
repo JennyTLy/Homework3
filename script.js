@@ -12,7 +12,7 @@ var charLength = prompt("For your auto-generated password, please select a lenge
 var upperCaseChoice = prompt("Would you like to include uppercase letters? Please type 'yes' for yes or 'no' for no")
 
 //prompt user to select if they'd like to use special characters in their password
-var specialCharChoice = prompt("Would you like to include special characters in your password? Please type 'true' for yes or 'false' for no")
+var specialCharChoice = prompt("Would you like to include special characters in your password? Please type 'yes' for yes or 'no' for no")
 
 //console log password length response
 console.log("Password Length" + charLength);
@@ -24,6 +24,7 @@ console.log("Include Uppercase" + upperCaseChoice);
 console.log("Include Special Characters" + specialCharChoice)
 
 //validating user choices
+//validating uppercase response
 function upperValidation(){
 
     var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -33,7 +34,19 @@ function upperValidation(){
         return;
       }
 
+};
+
+//validating special character response
+function specialValidation(){
+  var specialCharacters = "!@#$%^&*()+=";
+  if (specialCharChoice === 'yes'){
+    return specialCharacters;
+  }else{
+    return;
+  }
+
 }
+
 
 
 
